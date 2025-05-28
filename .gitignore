@@ -4,9 +4,10 @@
 # Ada Library Information
 *.ali
 
-**/obj/
-**/bin/
-**/alire/
-**/config/
+**/**/**/objs/
+**/**/**/bin/
+**/**/**/alire/./
+**/**/**/config/
 
 .fake
+
