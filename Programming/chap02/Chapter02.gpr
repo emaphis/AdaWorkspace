@@ -1,6 +1,6 @@
 project Chapter02 is
 
-   for Main use ("current_directory.adb", "hello_world.adb", "temperature.adb");
+   for Main use ("house_cost_b.adb", "house_cost_a.adb", "current_directory.adb", "hello_world.adb", "temperature.adb");
    for Source_Dirs use ("src");
    for Object_Dir use "objs";
 
