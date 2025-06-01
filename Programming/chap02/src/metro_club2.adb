@@ -10,30 +10,31 @@ procedure metro_club2 is
    -- ROOM are used to establish the facts as they are determined.
    -- The programme outputs the name of the murderer.
 
-   -- const
    UNKNOWN       : constant Integer := 0;
+   type Hair_Color is (Unknown1, RED, BLACK, GREY, BROWN);
+   type Attire_Type is (Unknown2,PINCENESs, GOLDWATCH, RUBYRING, TATTEREDCUFFS );
 
-   RED           : constant Integer := 1;
-   BLACK         : constant Integer := 2;
-   GREY          : constant Integer := 3;
-   BROWN         : constant Integer := 4;
-
-   PINCENES      : constant Integer := 1;
-   GOLDWATCH     : constant Integer := 2;
-   RUBYRING      : constant Integer := 3;
-   TATTEREDCUFFS : constant Integer := 4;
-
-   COLWOODLEY    : constant Integer := 1;
-   MRHOLMAN      : constant Integer := 2;
-   MRPOPE        : constant Integer := 3;
-   SIRRAYMOND    : constant Integer := 4;
+ --  PINCENES      : constant Integer := 1;
+ --  GOLDWATCH     : constant Integer := 2;
+  -- RUBYRING      : constant Integer := 3;
+  -- TATTEREDCUFFS : constant Integer := 4;
+   --type Suspect_Name is (ColWoodley, MrHolman, MrPope, SirRaymond);
+   --COLWOODLEY    : constant Integer := 1;
+  -- MRHOLMAN      : constant Integer := 2;
+  -- MRPOPE        : constant Integer := 3;
+  -- SIRRAYMOND    : constant Integer := 4;
+   type Suspect_Name is (COLWOODLEY, MRHOLMAN, MRPOPE, SIRRAYMOND);
+   for Suspect_Name use (COLWOODLEY => 1,
+                           MRHOLMAN => 2,
+                           MRPOPE => 3,
+                           SIRRAYMOND=> 4 );
 
    -- var
    SUSPECT, MURDERER : Integer;
 
-   HAIR   : array (COLWOODLEY .. SIRRAYMOND) of integer;
-   ATTIRE : array (COLWOODLEY .. SIRRAYMOND) of integer;
-   ROOM   : array (COLWOODLEY .. SIRRAYMOND) of integer;
+   HAIR   : array (Susptect_Name'COLWOODLEY .. Susptect_Name'SIRRAYMOND) of Hair_Color;
+   ATTIRE : array (COLWOODLEY .. SIRRAYMOND) of Attire_Type;
+   ROOM   : array (COLWOODLEY .. SIRRAYMOND) of Integer;
 
 begin
    -- Assume nothing is known

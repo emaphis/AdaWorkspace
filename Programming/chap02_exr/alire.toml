@@ -1,0 +1,12 @@
+name = "chap02_exr"
+description = "Chapter 2 exercises"
+version = "0.1.0-dev"
+
+authors = ["Ed Maphis"]
+maintainers = ["Ed Maphis <emaphis85@gmail.com>"]
+maintainers-logins = ["emaphis"]
+licenses = "MIT"
+website = "www.github.com/emaphis"
+tags = ["beginner", "exercises"]
+
+executables = ["chap02_exr"]
