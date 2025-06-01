@@ -1,18 +1,19 @@
 with "config/chap02_exr_config.gpr";
+
 project Chap02_Exr is
 
    for Source_Dirs use ("src/", "config/");
    for Object_Dir use "obj/" & Chap02_Exr_Config.Build_Profile;
    for Create_Missing_Dirs use "True";
    for Exec_Dir use "bin";
-   for Main use ("chap02.adb");
+   for Main use ("circle.adb", "quick_check02.adb", "chap02.adb");
 
    package Compiler is
-      for Default_Switches ("Ada") use Chap02_Exr_Config.Ada_Compiler_Switches;
+      for Default_Switches ("ada") use Chap02_Exr_Config.Ada_Compiler_Switches;
    end Compiler;
 
    package Binder is
-      for Switches ("Ada") use ("-Es"); --  Symbolic traceback
+      for Switches ("ada") use ("-Es"); --  Symbolic traceback
    end Binder;
 
    package Install is
@@ -20,3 +21,4 @@ project Chap02_Exr is
    end Install;
 
 end Chap02_Exr;
+
