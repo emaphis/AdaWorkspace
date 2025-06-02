@@ -24,4 +24,4 @@ begin  -- Circle
    Ada.Text_IO.New_Line;
 end circle;
 
--- The circumference of a circle of or radius of 7 is 347.46
+--  The circumference of a circle of or radius of 7 is 347.46
