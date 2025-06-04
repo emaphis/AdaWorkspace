@@ -6,7 +6,7 @@ project Chap02_Exr is
    for Object_Dir use "obj/" & Chap02_Exr_Config.Build_Profile;
    for Create_Missing_Dirs use "True";
    for Exec_Dir use "bin";
-   for Main use ("circle.adb", "quick_check02.adb", "chap02.adb");
+   for Main use ("assignment.adb", "prep_exercise_20.adb", "prep_exercise_17.adb", "prep_exercise_14.adb", "circle.adb", "quick_check02.adb", "chap02.adb");
 
    package Compiler is
       for Default_Switches ("ada") use Chap02_Exr_Config.Ada_Compiler_Switches;
